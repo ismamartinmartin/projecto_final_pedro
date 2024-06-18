@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+
+    min-height: 4em;
+}
+
+.openModal {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    width: 100%;
+
+    margin: 1em auto;
+    padding: 2em;
+
+    max-width: 1200px; 
+
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 0, 0, 0.364);
+
+    width: 100vw;
+    height: 100vh;
+
+    animation: animatetop 1s ease-in-out;
+}
+
+.modal__header {
+    position: fixed;
+    top: 0;
+    right: 20%;
+    left: 20%;
+
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+
+    animation: animatetop 1s ease-in-out;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em;
+
+    min-height: 8em;
+
+    background: linear-gradient(180deg, rgba(14,0,255,0) 0%, rgba(255,4,0,1) 38%);
+}
+
+.footer .footer__index {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1em auto;
+    padding: 2em;
+
+    min-height: 8em;
+    max-width: 1200px;
+}
+
+.footer .footer__index .footer__index--items {
+    padding: 1em;
+}
+
+
+.footer .bannerHome__background--logo {
+    max-width: 100px;
+}
+
+.bannerHome {
+    background: url('https://images.unsplash.com/photo-1627704266280-af0c33c59e72?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
+    gap: 1em;
+
+    min-height: 20em;
+
+    text-align: center;
+
+
+    box-shadow: inset 0 0 5em 6em;
+
+}
+
+.bannerHome .bannerHome__background--logo {
+    max-width: 64px;
+}
+
+.bannerHome .bannerHome__background--title {
+    color: white;
+}
+
+.intro {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(132,2,17,1) 44%, rgba(255,4,0,1) 100%);
+    
+    opacity: 100%;
+
+    color: white;
+
+    max-width: 1200px;
+
+    gap: 1em;
+    margin: 1em auto;
+    padding: 2em;
+}
+
+.intro .intro__container {
+    opacity: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap: 1em;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1em auto;
+    gap: 2em;
+    padding: 2em;
+
+    max-width: 1200px;
+}
+
+
+.boxes__style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 2em;
+
+    width: 100%;
+    min-height: 600px;
+}
+
+.boxes__style--container {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    height: 600px;
+    min-width: 500px;
+
+    border-radius: 1em;
+    box-shadow: 0px 0px 1em red;
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ahs__box {
+    background-image: url('/content/ahs_box.jpg');
+}
+
+.buffy__box {
+    background-image: url('/content/buffy_box.jpg');
+}
+
+.marianne__box {
+    background-image: url('/content/marianne_box.jpg');
+}
+
+.usher__box {
+    background-image: url('/content/fallUsherHouse_box.jpg');
+}
+
+.sabrina__box {
+    background-image: url('/content/sabrina_box.jpg');
+}
+
+.twd__box {
+    background-image: url('/content/twd_box.jpg');
+}
+
+.introSection {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    padding: 7em;
+
+    background: url('/content/ahs_box.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+
+    box-shadow: inset 0 0 8em 2em;
+}
+
+.introSection .introSection__title {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
